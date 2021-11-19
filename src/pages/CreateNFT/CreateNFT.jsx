@@ -60,7 +60,6 @@ const CreateNFT = () => {
     contract = new ethers.Contract(nftMarketAddress, NFTMarket.abi, signer);
     let listingPrice = await contract.getListingPrice();
     listingPrice = listingPrice.toString();
-
     transaction = await contract.createMarketItem(nftAddress, tokenId, price, {
       value: listingPrice,
     });

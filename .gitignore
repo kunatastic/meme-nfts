@@ -33,3 +33,4 @@ cache
 artifacts
 
 secret.json
+config.js
